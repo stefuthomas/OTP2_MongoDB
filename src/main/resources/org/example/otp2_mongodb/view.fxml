@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="406.0" prefWidth="356.0" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.otp2_mongodb.MongoDBApplicationController">
+   <children>
+      <HBox alignment="CENTER" maxWidth="710.0" minWidth="200.0" prefHeight="26.0" prefWidth="710.0" spacing="40.0">
+         <children>
+            <Label text="ID" />
+            <TextField fx:id="idField"/>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxWidth="710.0" minWidth="200.0" prefHeight="26.0" prefWidth="710.0" spacing="40.0">
+         <children>
+            <Label text="Name" />
+            <TextField fx:id="nameField" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxWidth="710.0" minWidth="200.0" prefHeight="26.0" prefWidth="710.0" spacing="40.0">
+         <children>
+            <Label text="Age" />
+            <TextField fx:id="ageField"/>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxWidth="710.0" minWidth="200.0" prefHeight="26.0" prefWidth="710.0" spacing="40.0">
+         <children>
+            <Label text="City" />
+            <TextField fx:id="cityField"/>
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" maxWidth="366.0" prefHeight="162.0" prefWidth="366.0" spacing="20.0">
+         <children>
+            <Button fx:id="addBtn" mnemonicParsing="false" text="Add" onAction="#add"/>
+            <Button fx:id="readBtn" mnemonicParsing="false" text="Read" onAction="#read"/>
+            <Button fx:id="updateBtn" mnemonicParsing="false" text="Update" onAction="#update"/>
+            <Button fx:id="deleteBtn" mnemonicParsing="false" text="Delete" onAction="#delete"/>
+         </children>
+      </VBox>
+   </children>
+</VBox>
